@@ -67,11 +67,6 @@ class Regex(object):
                     Character(character)
                 )
         assert len(stack) == 1
-        # TODO: Fails on 'a(b|c)?'
-        # regex = stack.pop()
-        # while stack:
-        #     regex = Concat(stack.pop(), regex)
-        # return regex
         return stack.pop()
 
     @classmethod
