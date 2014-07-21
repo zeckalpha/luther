@@ -32,6 +32,7 @@ class Regex(object):
         from kyle.regex.union import Union
         from kyle.regex.concat import Concat
         from kyle.regex.character import Character
+        # TODO: BUG: Regex.from_string('a(a|b)?').accepts('b')
 
         # stack is just a list
         unary = {
